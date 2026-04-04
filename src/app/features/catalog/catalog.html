@@ -1,0 +1,20 @@
+<section class="catalog-container">
+  <h1 class="gallery-title">Our Collection</h1>
+  
+  <div class="art-grid">
+    @for (art of artList(); track art.id) {
+      <div class="art-card">
+        <div class="image-wrapper">
+          <img [src]="art.imageUrl" [alt]="art.title">
+          <span class="category-tag">{{ art.category }}</span>
+        </div>
+        <div class="art-info">
+          <h3>{{ art.title }}</h3>
+          <p class="artist-name">by {{ art.artist }}</p>
+          <p class="price">{{ art.price | currency:'USD' }}</p>
+          <button class="view-btn">View Details</button>
+        </div>
+      </div>
+    }
+  </div>
+</section>
