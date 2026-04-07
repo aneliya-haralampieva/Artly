@@ -1,9 +1,26 @@
-<nav class="navbar">
-  <div class="logo">Artly</div>
-  <ul class="nav-links">
-    <li><a routerLink="/">Home</a></li>
-    <li><a routerLink="/catalog">Catalog</a></li>
-    <li><a routerLink="/login">Login</a></li>
-    <li><a routerLink="/register">Register</a></li>
+<nav class="navbar" style="background: #0a0a0a; padding: 1.2rem 2.5rem; display: flex; justify-content: space-between; align-items: center; color: white; border-bottom: 1px solid #222; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
+  
+  <div class="logo" style="font-weight: 900; font-size: 1.6rem; letter-spacing: 3px; color: #fff; text-shadow: 0 0 10px rgba(52, 152, 219, 0.5);">
+    <span style="color: #3498db;">ART</span>LY
+  </div>
+  
+  <ul class="nav-links" style="list-style: none; display: flex; gap: 30px; margin: 0; padding: 0; align-items: center;">
+    <li>
+      <a routerLink="/catalog" routerLinkActive="active" style="color: #b3b3b3; text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: 0.3s;">Catalog</a>
+    </li>
+    <li>
+      <a routerLink="/add-artwork" routerLinkActive="active" style="color: #b3b3b3; text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: 0.3s;">Sell Art</a>
+    </li>
+    <li>
+      <a routerLink="/login" routerLinkActive="active" style="color: #b3b3b3; text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: 0.3s;">Login</a>
+    </li>
+    
+    <li>
+      <a routerLink="/register" 
+         routerLinkActive="active" 
+         style="color: white; text-decoration: none; background: linear-gradient(45deg, #3498db, #00d2ff); padding: 8px 22px; border-radius: 50px; font-weight: 700; font-size: 0.9rem; box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3); transition: 0.3s;">
+         Register
+      </a>
+    </li>
   </ul>
 </nav>

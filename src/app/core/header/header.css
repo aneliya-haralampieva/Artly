@@ -24,3 +24,8 @@
   color: #555;
   font-weight: 500;
 }
+
+.nav-links a.active {
+  color: #3498db !important; /* Makes the current page link turn blue */
+  font-weight: bold;
+}

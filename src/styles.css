@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --primary: #3498db;
+  --bg-dark: #121212;
+  --card-bg: #1e1e1e;
+  --text-main: #eeeeee;
+  --text-dim: #b3b3b3;
+  --accent: #00d2ff;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* 🌀 PAGE TRANSITION ANIMATION */
+router-outlet + * {
+  display: block;
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
