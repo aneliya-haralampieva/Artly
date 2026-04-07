@@ -43,9 +43,9 @@ import { RouterLink } from '@angular/router';
 export class ArtDetailsComponent {
   private artService = inject(ArtService);
   
-  // This input automatically receives the 'id' from the URL
+
   id = input.required<string>(); 
 
-  // This finds the specific art in your service using that ID
+
   art = () => this.artService.getArtById(this.id());
 }

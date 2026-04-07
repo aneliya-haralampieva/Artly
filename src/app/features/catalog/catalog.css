@@ -5,7 +5,7 @@
 }
 
 .gallery-title {
-  color: #ffffff; /* Bright white for maximum visibility */
+  color: #ffffff;
   font-size: 3rem;
   font-weight: 800;
   text-align: center;
@@ -14,10 +14,10 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   
-  /* ✨ THE GLOW EFFECT: Makes it stand out on the dark background */
+
   text-shadow: 0 0 15px rgba(52, 152, 219, 0.4), 0 0 30px rgba(52, 152, 219, 0.2);
   
-  /* 🌀 ANIMATION: Gentle fade in when the page loads */
+
   animation: titleFade 1s ease-out;
 }
 

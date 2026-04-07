@@ -13,7 +13,7 @@ export class LoginComponent {
   private fb = inject(FormBuilder);
   private router = inject(Router);
 
-  // This defines the "rules" for our form
+
   loginForm = this.fb.group({
     email: ['', [Validators.required, Validators.email]],
     password: ['', [Validators.required, Validators.minLength(6)]]
@@ -22,7 +22,7 @@ export class LoginComponent {
   onSubmit() {
     if (this.loginForm.valid) {
       console.log('Login Success!', this.loginForm.value);
-      // For now, let's just go back to the catalog after "logging in"
+    
       this.router.navigate(['/catalog']);
     }
   }

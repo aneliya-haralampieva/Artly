@@ -26,6 +26,6 @@
 }
 
 .nav-links a.active {
-  color: #3498db !important; /* Makes the current page link turn blue */
+  color: #3498db !important;
   font-weight: bold;
 }
