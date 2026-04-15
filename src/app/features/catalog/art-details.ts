@@ -19,7 +19,7 @@ import { RouterLink } from '@angular/router';
             <h1 style="font-size: 2.5rem; margin-bottom: 10px;">{{ art()?.title }}</h1>
             <p style="font-size: 1.2rem; color: #666; margin-bottom: 20px;">by {{ art()?.artist }}</p>
             
-            <div style="background: #f8f9fa; padding: 20px; border-radius: 10px;">
+            <div style="background: #043363; padding: 20px; border-radius: 10px;">
               <p><strong>Category:</strong> {{ art()?.category }}</p>
               <p style="font-size: 1.5rem; color: #27ae60; font-weight: bold; margin-top: 10px;">
                 {{ art()?.price | currency:'USD' }}
